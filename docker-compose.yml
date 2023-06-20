@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    expose:
+      - "8000:8000"
+    command: ./docker/run_server.sh
